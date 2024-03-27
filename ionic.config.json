@@ -1,0 +1,7 @@
+{
+  "name": "AlmonacidAct5",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
