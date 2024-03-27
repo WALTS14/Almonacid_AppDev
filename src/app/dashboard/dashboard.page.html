@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">dashboard</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-list>
+  <ion-item>
+    item 1
+  </ion-item>
+  
+</ion-list>
+
+
+
+<ion-tabs>
+  <button (click)="openModal()">Open Modal</button>
+  <ion-button color="primary" (click) ="alert()">Alert</ion-button>
+  <ion-button color="danger" (click)="logout()">logout</ion-button>
+  <!-- <ion-button color="primary" (click)="presentToast()">Toast</ion-button>
+  <ion-button (click)="dismissToast()">Dismiss Toast</ion-button> -->
+  <ion-card>
+    <ion-card-header>
+        <ion-card-title>Card Header</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        This is an Ionic card with default styling
+    </ion-card-content>
+  </ion-card>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name=""home></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="component">
+      <ion-label>Component</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+</ion-content>
