@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Calculator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <div class="calculator">
+    <div class="input">
+      <ion-input class="result" [(ngModel)]="result"></ion-input>
+      <p>HISTORY</p>
+      <ion-input class="history" [(ngModel)]="textField"></ion-input>
+    </div>
+
+    <div class="container">
+       
+      <div class="numbers">
+        <ion-button class="1" (click)="goBtn(1)">1</ion-button>
+        <ion-button class="2" (click)="goBtn(2)">2</ion-button>
+        <ion-button class="3" (click)="goBtn(3)">3</ion-button>
+        <ion-button class="4" (click)="goBtn(4)">4</ion-button>
+        <ion-button class="5" (click)="goBtn(5)">5</ion-button>
+        <ion-button class="6" (click)="goBtn(6)">6</ion-button>
+        <ion-button class="7" (click)="goBtn(7)">7</ion-button>
+        <ion-button class="8" (click)="goBtn(8)">8</ion-button>
+        <ion-button class="9" (click)="goBtn(9)">9</ion-button>
+        <ion-button class="item1" (click)="clearBtn()">C</ion-button>
+        <ion-button class="item1" (click)="goBtn(0)">0</ion-button>
+        <ion-button class="item1" (click)="goEqual()">=</ion-button>
+      </div>
+
+
+
+      <div class="operation">
+        <!-- <ion-button class="percent">%</ion-button> -->
+        <ion-button class="division" (click)="goDivide()">/</ion-button>
+        <ion-button class="multiplication" (click)="goMultiply()">x</ion-button>
+        <ion-button class="subtraction" (click)="goSubtract()">-</ion-button>
+        <ion-button class="addition" (click)="goAdd()">+</ion-button>
+      </div>
+      
+ 
+      
+      
+<!-- 
+      <div class="pointBtn">
+        <ion-button class="point"></ion-button>
+      </div> -->
+      
+      
+     
+  
+    </div>
+  </div>
+</ion-content>

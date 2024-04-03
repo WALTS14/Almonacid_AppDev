@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="" (click)="goBack()"></ion-back-button>
+      <ion-title>
+        SETTINGS
+      </ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <div class="darkmode">
+        <h2>DARK SIDE</h2>
+        <ion-toggle [(ngModel)]="condition"></ion-toggle>
+    </div>
+  </div>
+
+  <div class="volume">
+    <h2>VOLUME</h2>
+    <custom-slider></custom-slider> 
+  </div>
+
+  <div class="Clikables">
+    <div class="buttons">
+      <ion-button color="primary">Primary Button</ion-button>
+      <ion-button color="scondary">Secondary Button</ion-button>
+      <ion-button color="danger">Danger Button</ion-button>
+    </div>
+
+    <div class="popups">
+      <ion-button color="danger" (click)="alert()">ALERT</ion-button>
+
+      <ion-button color="primary" (click)="toast()">TOAST</ion-button>
+    </div>
+  </div>
+    
+  
+</ion-content>

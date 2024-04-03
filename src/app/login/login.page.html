@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  
+  <div id="container">
+    <p>LOGIN</p>
+    <ion-item>
+      <!-- <ion-label position= "floating">Email</ion-label> -->
+      <input type="text" [(ngModel)] = "Email">
+    </ion-item>
+    
+    <ion-item>
+      <!-- <ion-label position = "floating">Password</ion-label> -->
+      <input type="password" [(ngModel)] = "Password">
+    </ion-item>
+    
+    <button (click) = "login()" class="loginbtn">Login</button>
+  </div>
+  
+</ion-content>
