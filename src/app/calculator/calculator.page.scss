@@ -1,0 +1,27 @@
+ion-header{
+    text-align: center;
+}
+.calculator{
+    width: 100vw;
+    height: 50vh;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 400px;
+
+}
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.operation{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.container ion-button{
+    width: 100px;
+    margin: 10px 0 0 10px;
+}
