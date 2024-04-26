@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
-
+  // const auth = getAuth();
+  // console.log(auth);
+  // createUserWithEmailAndPassword(auth, "test@gmail.com", "password")
+  //   .then(userCredential) => {
+  //      Signed up
+  //   }
 }
