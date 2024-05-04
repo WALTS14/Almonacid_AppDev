@@ -1,20 +1,48 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <div class="container">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <h1>NBA PLAYERS</h1> 
+  
+   <div class="content" >
+      
+    <!-- <div class="content-box"> -->
+      <h1>NBA PLAYERS</h1> 
+      <table>
+          <thead>
+            <tr>
+              <th>Nba Player</th><br> 
+              <th>Player Number</th><br> 
+              <th>Nba Team</th><br> 
+              <th>Draft Date</th><br> 
+              <th>Active Player</th><br> 
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of UserList">
+              <td> nbaPlayer :  {{ user.nbaPlayer}} </td><br> 
+              <td> playerNumber :  {{ user.playerNumber}} </td> <br> 
+              <td> nbaTeam :  {{ user.nbaTeam}} </td> <br> 
+              <td> draftDate :  {{ user.draftDate}} </td> <br> 
+              <td> isActive :  {{ user.isActive}} </td> <br> 
+              <div class="btn">
+                <ion-button (click)="update(user)">update</ion-button>
+                <ion-button (click)="delete(user)">delete</ion-button>
+            
+              </div>
+            </tr>
+          </tbody>
+      </table>
+      <!-- <h2> nbaPlayer :  {{ user.nbaPlayer}}</h2>
+      <h2> playerNumber :  {{ user.playerNumber}}</h2>
+      <h2> nbaTeam :  {{ user.nbaTeam}}</h2>
+      <h2> draftDate :  {{ user.draftDate}}</h2>
+      <h2> isActive :  {{ user.isActive}}</h2> -->
+    
+      
+  
+    <!-- </div> -->
+    
+   </div>
+   <ion-button (click)="create()">create</ion-button>
   </div>
 </ion-content>

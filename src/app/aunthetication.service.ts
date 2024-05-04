@@ -7,11 +7,13 @@ import { Router } from '@angular/router';
 export class AuntheticationService {
 
   constructor(private router: Router) { }
+  
   setAuthentication(auth:boolean){
     if (auth) {
       localStorage.setItem("loggIn", "True");
     }
   }
+
   canActiviate(){
     if(localStorage.getItem("loggedIn")=="true"){
       return true;
